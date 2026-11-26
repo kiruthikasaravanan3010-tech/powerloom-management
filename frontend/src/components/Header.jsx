@@ -104,10 +104,10 @@ function Header() {
         productionRes,
         stockRes,
       ] = await Promise.all([
-        fetch("http://localhost:5000/api/orders"),
-        fetch("http://localhost:5000/api/maintenance"),
-        fetch("http://localhost:5000/api/production/summary"),
-        fetch("http://localhost:5000/api/stock"),
+        fetch("https://powerloom-management.onrender.com/api/orders"),
+        fetch("https://powerloom-management.onrender.com/api/maintenance"),
+        fetch("https://powerloom-management.onrender.com/api/production/summary"),
+        fetch("https://powerloom-management.onrender.com/api/stock"),
       ]);
 
       if (
@@ -148,7 +148,7 @@ function Header() {
       if (notificationSettings.productionEntryAlerts) {
         try {
           const productionEntriesRes = await fetch(
-            "http://localhost:5000/api/production"
+            "https://powerloom-management.onrender.com/api/production"
           );
 
           if (productionEntriesRes.ok) {

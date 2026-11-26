@@ -10,7 +10,7 @@ function Stock() {
       setLoading(true);
 
       const response = await fetch(
-        "http://localhost:5000/api/stock"
+        "https://powerloom-management.onrender.com/api/stock"
       );
 
       const data = await response.json();

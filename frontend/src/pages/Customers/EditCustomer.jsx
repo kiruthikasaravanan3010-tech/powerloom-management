@@ -20,7 +20,7 @@ function EditCustomer({ customerId, setPage }) {
       setLoading(true);
 
       const response = await fetch(
-        `http://localhost:5000/api/customers/${customerId}`
+        `https://powerloom-management.onrender.com/api/customers/${customerId}`
       );
 
       if (!response.ok) {
@@ -69,7 +69,7 @@ function EditCustomer({ customerId, setPage }) {
       setSaving(true);
 
       const response = await fetch(
-        `http://localhost:5000/api/customers/${customerId}`,
+        `https://powerloom-management.onrender.com/api/customers/${customerId}`,
         {
           method: "PUT",
           headers: {

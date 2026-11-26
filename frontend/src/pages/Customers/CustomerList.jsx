@@ -10,7 +10,7 @@ function CustomerList({ setPage, setSelectedCustomerId }) {
       setLoading(true);
 
       const response = await fetch(
-        "http://localhost:5000/api/customers"
+        "https://powerloom-management.onrender.com/api/customers"
       );
 
       if (!response.ok) {
@@ -48,7 +48,7 @@ function CustomerList({ setPage, setSelectedCustomerId }) {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/customers/${customerId}`,
+        `https://powerloom-management.onrender.com/api/customers/${customerId}`,
         {
           method: "DELETE"
         }

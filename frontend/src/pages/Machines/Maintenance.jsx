@@ -23,7 +23,7 @@ function Maintenance({ setPage, setSelectedMaintenanceId }) {
       setLoading(true);
 
       const response = await fetch(
-        "http://localhost:5000/api/maintenance"
+        "https://powerloom-management.onrender.com/api/maintenance"
       );
 
       const data = await response.json();
@@ -44,7 +44,7 @@ function Maintenance({ setPage, setSelectedMaintenanceId }) {
   const fetchMachines = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/machines"
+        "https://powerloom-management.onrender.com/api/machines"
       );
 
       const data = await response.json();
@@ -90,7 +90,7 @@ function Maintenance({ setPage, setSelectedMaintenanceId }) {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/maintenance",
+        "https://powerloom-management.onrender.com/api/maintenance",
         {
           method: "POST",
           headers: {
@@ -153,7 +153,7 @@ function Maintenance({ setPage, setSelectedMaintenanceId }) {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/maintenance/${id}`,
+        `https://powerloom-management.onrender.com/api/maintenance/${id}`,
         {
           method: "DELETE"
         }

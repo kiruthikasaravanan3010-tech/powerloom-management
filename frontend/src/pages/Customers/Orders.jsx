@@ -32,7 +32,7 @@ function Orders({ setPage, setSelectedOrderId }) {
       setLoading(true);
 
       const response = await fetch(
-        "http://localhost:5000/api/orders"
+        "https://powerloom-management.onrender.com/api/orders"
       );
 
       if (!response.ok) {
@@ -61,7 +61,7 @@ function Orders({ setPage, setSelectedOrderId }) {
       setPaymentLoading(true);
 
       const response = await fetch(
-        `http://localhost:5000/api/payments/${order.orderId}`
+        `https://powerloom-management.onrender.com/api/payments/${order.orderId}`
       );
 
       const data = await response.json();
@@ -169,7 +169,7 @@ Kiruthika Textiles`;
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/orders/${orderId}`,
+        `https://powerloom-management.onrender.com/api/orders/${orderId}`,
         {
           method: "DELETE"
         }
@@ -215,7 +215,7 @@ Kiruthika Textiles`;
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/orders/${order.orderId}/dispatch`,
+        `https://powerloom-management.onrender.com/api/orders/${order.orderId}/dispatch`,
         {
           method: "PUT"
         }

@@ -15,7 +15,7 @@ function AddPayment({ setPage, selectedOrderId }) {
     const fetchOrder = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/orders/${selectedOrderId}`
+          `https://powerloom-management.onrender.com/api/orders/${selectedOrderId}`
         );
 
         const data = await response.json();
@@ -70,7 +70,7 @@ function AddPayment({ setPage, selectedOrderId }) {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/payments",
+        "https://powerloom-management.onrender.com/api/payments",
         {
           method: "POST",
           headers: {

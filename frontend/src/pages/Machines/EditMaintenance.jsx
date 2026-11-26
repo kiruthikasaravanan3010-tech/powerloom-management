@@ -27,7 +27,7 @@ function EditMaintenance({
   const fetchMaintenance = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/maintenance/${maintenanceId}`
+        `https://powerloom-management.onrender.com/api/maintenance/${maintenanceId}`
       );
 
       if (!response.ok) {
@@ -65,7 +65,7 @@ function EditMaintenance({
   const fetchMachines = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/machines"
+        "https://powerloom-management.onrender.com/api/machines"
       );
 
       if (!response.ok) {
@@ -113,7 +113,7 @@ function EditMaintenance({
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/maintenance/${maintenanceId}`,
+        `https://powerloom-management.onrender.com/api/maintenance/${maintenanceId}`,
         {
           method: "PUT",
           headers: {

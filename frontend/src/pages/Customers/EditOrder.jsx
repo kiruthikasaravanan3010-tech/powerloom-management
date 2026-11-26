@@ -20,7 +20,7 @@ function EditOrder({ orderId, setPage }) {
     const fetchOrder = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/orders/${orderId}`
+          `https://powerloom-management.onrender.com/api/orders/${orderId}`
         );
 
         if (!response.ok) {
@@ -86,7 +86,7 @@ function EditOrder({ orderId, setPage }) {
       setSaving(true);
 
       const response = await fetch(
-        `http://localhost:5000/api/orders/${orderId}`,
+        `https://powerloom-management.onrender.com/api/orders/${orderId}`,
         {
           method: "PUT",
           headers: {

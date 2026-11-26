@@ -10,7 +10,7 @@ function MachineReport() {
       setLoading(true);
 
       const response = await fetch(
-        "http://localhost:5000/api/reports/machine"
+        "https://powerloom-management.onrender.com/api/reports/machine"
       );
 
       const data = await response.json();

@@ -13,7 +13,7 @@ function WeeklyReport() {
   const fetchWeeklyProduction = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/production"
+        "https://powerloom-management.onrender.com/api/production"
       );
 
       if (!response.ok) {

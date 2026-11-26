@@ -19,7 +19,7 @@ function EditMachine({ machineId, setPage }) {
       setLoading(true);
 
       const response = await fetch(
-        `http://localhost:5000/api/machines/${machineId}`
+        `https://powerloom-management.onrender.com/api/machines/${machineId}`
       );
 
       if (!response.ok) {
@@ -67,7 +67,7 @@ function EditMachine({ machineId, setPage }) {
       setSaving(true);
 
       const response = await fetch(
-        `http://localhost:5000/api/machines/${machineId}`,
+        `https://powerloom-management.onrender.com/api/machines/${machineId}`,
         {
           method: "PUT",
           headers: {

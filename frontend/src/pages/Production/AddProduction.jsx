@@ -124,7 +124,7 @@ function AddProduction() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/production",
+        "https://powerloom-management.onrender.com/api/production",
         {
           method: "POST",
           headers: {

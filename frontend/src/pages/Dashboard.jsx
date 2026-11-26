@@ -36,11 +36,11 @@ function Dashboard({ setPage }) {
         customersResponse,
         ordersResponse
       ] = await Promise.all([
-        fetch("http://localhost:5000/api/production/summary"),
-        fetch("http://localhost:5000/api/machines"),
-        fetch("http://localhost:5000/api/operators"),
-        fetch("http://localhost:5000/api/customers"),
-        fetch("http://localhost:5000/api/orders")
+        fetch("https://powerloom-management.onrender.com/api/production/summary"),
+        fetch("https://powerloom-management.onrender.com/api/machines"),
+        fetch("https://powerloom-management.onrender.com/api/operators"),
+        fetch("https://powerloom-management.onrender.com/api/customers"),
+        fetch("https://powerloom-management.onrender.com/api/orders")
       ]);
 
       const summaryData = await summaryResponse.json();

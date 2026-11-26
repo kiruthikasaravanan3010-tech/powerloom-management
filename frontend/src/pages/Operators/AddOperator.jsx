@@ -24,7 +24,7 @@ function AddOperator() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/operators",
+        "https://powerloom-management.onrender.com/api/operators",
         {
           method: "POST",
           headers: {

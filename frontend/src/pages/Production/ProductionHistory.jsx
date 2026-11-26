@@ -10,7 +10,7 @@ function ProductionHistory({ setPage, setSelectedProductionId }) {
       setLoading(true);
 
       const response = await fetch(
-        "http://localhost:5000/api/production"
+        "https://powerloom-management.onrender.com/api/production"
       );
 
       if (!response.ok) {
@@ -48,7 +48,7 @@ function ProductionHistory({ setPage, setSelectedProductionId }) {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/production/${id}`,
+        `https://powerloom-management.onrender.com/api/production/${id}`,
         {
           method: "DELETE"
         }

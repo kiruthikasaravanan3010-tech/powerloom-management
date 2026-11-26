@@ -18,7 +18,7 @@ function EditProduction({ productionId, setPage }) {
     const fetchProduction = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/production`
+          `https://powerloom-management.onrender.com/api/production`
         );
 
         if (!response.ok) {
@@ -88,7 +88,7 @@ function EditProduction({ productionId, setPage }) {
       setSaving(true);
 
       const response = await fetch(
-        `http://localhost:5000/api/production/${productionId}`,
+        `https://powerloom-management.onrender.com/api/production/${productionId}`,
         {
           method: "PUT",
           headers: {

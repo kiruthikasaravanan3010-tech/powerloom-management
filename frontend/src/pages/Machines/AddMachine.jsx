@@ -23,7 +23,7 @@ function AddMachine() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/machines",
+        "https://powerloom-management.onrender.com/api/machines",
         {
           method: "POST",
           headers: {

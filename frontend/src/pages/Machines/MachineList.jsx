@@ -9,7 +9,7 @@ function MachineList({ setPage, setSelectedMachineId }) {
     try {
       setLoading(true);
 
-      const response = await fetch("http://localhost:5000/api/machines");
+      const response = await fetch("https://powerloom-management.onrender.com/api/machines");
 
       if (!response.ok) {
         throw new Error("Failed to fetch machines");
@@ -52,7 +52,7 @@ function MachineList({ setPage, setSelectedMachineId }) {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/machines/${machineId}`,
+        `https://powerloom-management.onrender.com/api/machines/${machineId}`,
         {
           method: "DELETE",
         }

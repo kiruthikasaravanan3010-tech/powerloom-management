@@ -10,7 +10,7 @@ function MonthlyReport() {
       setLoading(true);
 
       const response = await fetch(
-        "http://localhost:5000/api/reports/monthly"
+        "https://powerloom-management.onrender.com/api/reports/monthly"
       );
 
       const data = await response.json();

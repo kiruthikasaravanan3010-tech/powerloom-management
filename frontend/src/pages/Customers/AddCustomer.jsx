@@ -21,7 +21,7 @@ function AddCustomer() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/customers",
+        "https://powerloom-management.onrender.com/api/customers",
         {
           method: "POST",
           headers: {
